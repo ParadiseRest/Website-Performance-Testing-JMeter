@@ -1,21 +1,15 @@
 # Website-Performance-Testing-JMeter
 Performance testing of a website using JMeter.
-# Website Performance Testing using JMeter
+# Reqres API Performance Testing with JMeter
 
-This project demonstrates performance testing on a website using Apache JMeter. We perform load testing to simulate multiple users accessing the application and collect performance metrics such as response time and throughput.
+This project uses **Apache JMeter** to perform performance testing on the Reqres API. We simulate multiple users accessing the API to check how it handles user registration, login, and fetching user data under load.
 
-## Project Structure
-- `website_performance_test.jmx`: JMeter script to load test a website.
-- `performance_test_results.md`: Detailed report of the performance testing.
+## Endpoints Tested
+1. **GET /api/users?page=2**: Retrieve a paginated list of users.
+2. **POST /api/login**: Simulate user login with valid credentials.
+3. **GET /api/users/2**: Retrieve a single user.
 
-## How to Run the Test
-1. Install [JMeter](https://jmeter.apache.org/download_jmeter.cgi).
-2. Open JMeter and load the `website_performance_test.jmx` file.
-3. Run the test to simulate 50 users accessing the website over a 10-second ramp-up period.
-4. Review the test results in JMeter's "Aggregate Graph" or "View Results Tree".
+## Results
 
-## Test Summary
-- **Website URL**: https://example.com
-- **Test Duration**: 15 seconds
-- **Number of Users**: 50
-- **Metrics Collected**: Response time, throughput, error rate, and more.
+Performance metrics, such as response times and throughput, will be displayed in the JMeter listeners.
+
