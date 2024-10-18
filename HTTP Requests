@@ -1,0 +1,3 @@
+GET /api/users?page=2 - Retrieve a paginated list of users.
+POST /api/login - Simulate user login using valid credentials.
+GET /api/users/2 - Retrieve a single user.
